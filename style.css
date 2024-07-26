@@ -5,7 +5,7 @@ body {
 }
 
 html {
-  background-image: url("1.png");
+  background-image: url("/1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -16,7 +16,7 @@ html {
   max-width: 70rem;
   margin: auto;
   padding: 1rem;
-  color: snow; /* Ajuste para a cor desejada do texto */
+  color: #043822; /* Ajuste para a cor desejada do texto */
   border-radius: 2rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 100px #07312D;
@@ -31,7 +31,7 @@ main {
 
 h1 {
   text-align: center;
-  color: snow;
+  color: #043822;
   font-size: 4rem;
   margin: 0;
   padding-bottom: 3rem;
@@ -69,10 +69,12 @@ h1 {
 }
 
 .space-between {
+  font-size: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  color: #043822;
 }
 
 .total {
