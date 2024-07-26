@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/styles_margem.css" />
+  <title>Precificação</title>
+</head>
+<body>
+  <div class="app-container">
+    <main oninput="update()">
+      <h1>Calculadora de Margem</h1>
+      <section>
+        <div class="bill">
+          <label for="yourBill">Custo</label>
+          <input type="number" placeholder="Custo do Produto" id="yourBill" />
+        </div>
+        <div>
+          <div class="space-between">
+            <label for="">Selecione a Porcentagem: </label>
+            <span id="tipPercent">0%</span>
+          </div>
+          <input type="range" value="0" id="tipInput" class="range" />
+        </div>
+        <div class="space-between">
+          <span>Valor adicionado</span>
+          <span id="tipValue"></span>
+        </div>
+        <hr />
+        <div class="space-between total">
+          <span>Preço Final:</span>
+          <span id="totalWithTip"></span>
+        </div>
+      </section>
+      <section>
+        <div>
+          <div class="space-between">
+            <label for="splitInput">Caixa com: </label>
+            <span id="splitValue">1</span>
+          </div>
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="1"
+            id="splitInput"
+            class="range"
+          />
+        </div>
+        <div class="space-between">
+          <span>Custo Total:</span>
+          <span id="billEach"></span>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="/index_margem.js"></script>
+</body>
+</html>
